@@ -1,0 +1,36 @@
+header {
+	position: absolute;
+	z-index: 10;
+	width: 100%;
+	padding: 20px 0;
+}
+
+
+.header_wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.social {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	a {
+		margin: 0 20px;
+		max-width: 30px;
+		max-height: 30px;
+		width: 100%;
+		height: 100%;
+		transition: all 0.2s ease-in;
+	}
+
+	a:last-of-type {
+		margin-right: 0;
+	}
+
+	a:hover {
+		transform: scale(1.2);
+	}
+}

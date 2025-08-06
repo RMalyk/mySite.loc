@@ -1,0 +1,47 @@
+@font-face {
+	font-family: 'Archangelsk';
+	src: url('../fonts/Archangelsk.ttf');
+	src: local('Archangelsk'), local('Archangelsk'),
+	url('../fonts/Archangelsk.woff2') format('woff2'),
+	url('../fonts/Archangelsk.woff') format('woff'),
+	url('../fonts/Archangelsk.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('../fonts/Roboto-Bold.ttf');
+	src: local('Roboto-Bold'), local('Roboto-Bold'),
+	url('../fonts/Roboto-Bold.woff2') format('woff2'),
+	url('../fonts/Roboto-Bold.woff') format('woff'),
+	url('../fonts/Roboto-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('../fonts/Roboto-Light.ttf.ttf');
+	src: local('Roboto-Light.ttf'), local('Roboto-Light.ttf'),
+	url('../fonts/Roboto-Light.ttf.woff2') format('woff2'),
+	url('../fonts/Roboto-Light.ttf.woff') format('woff'),
+	url('../fonts/Roboto-Light.ttf.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('../fonts/Roboto-Regular.ttf');
+	src: local('Roboto-Regular'), local('Roboto-Regular'),
+	url('../fonts/Roboto-Regular.woff2') format('woff2'),
+	url('../fonts/Roboto-Regular.woff') format('woff'),
+	url('../fonts/Roboto-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}

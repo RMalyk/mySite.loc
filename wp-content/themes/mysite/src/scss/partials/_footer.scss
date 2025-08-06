@@ -1,0 +1,22 @@
+.logo_footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 13px;
+
+	img {
+		max-width: 295px;
+		width: 100%;
+	}
+}
+
+.copyright {
+	background-color: $primary-black;
+	padding: 13px;
+	text-align: center;
+
+	p {
+		font-size: 12px;
+		color: $primary-white;
+	}
+}

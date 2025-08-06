@@ -1,0 +1,32 @@
+.hero_section {
+	.wrapper_global {
+		position: relative;
+	}
+}
+
+.accent_block {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	background-color: $primary-yellow;
+	max-width: 624px;
+	width: 100%;
+	clip-path: polygon(calc(100% - 92%) 0, 100% 0, 100% calc(100% - 14%), calc(100% - 8%) 100%, 0 100%, 0 calc(100% - 85%));
+	padding: 70px;
+
+	h1 {
+		font-family: $archangelsk;
+		font-size: 62px;
+		margin-bottom: 25px;
+	}
+
+	button {
+		font-size: 24px;
+		color: $primary-yellow;
+		padding: 20px 50px;
+		background-color: $primary-black;
+	}
+}
+
+
+

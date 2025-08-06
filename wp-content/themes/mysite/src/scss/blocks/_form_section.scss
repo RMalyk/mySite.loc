@@ -1,0 +1,164 @@
+.form_section {
+	background: #ffffff;
+	background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 1) 75px, rgba(0, 0, 0, 1) calc(100% - 75px), rgba(255, 255, 255, 0) 100%);
+	padding: 85px 0;
+	position: relative;
+
+	&:after,
+	&:before {
+		content: '';
+		position: absolute;
+		filter: contrast(1000%) brightness(1500%);
+		background: linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)),
+		url(../../images/shum.svg);
+		width: 100%;
+		height: 70px;
+	}
+
+	&:before {
+		top: 1px;
+	}
+
+	&:after {
+		bottom: 0;
+		transform: rotate(180deg);
+	}
+
+	.section_title {
+		display: flex;
+		align-items: center;
+
+		img {
+			max-width: 132px;
+			margin-right: 32px;
+			margin-bottom: 25px;
+		}
+
+		h2 {
+			font-size: 62px;
+			line-height: 1;
+			color: $primary-white;
+		}
+	}
+
+	p {
+		font-size: 18px;
+		color: $primary-white;
+		max-width: 80%;
+		line-height: 1.88;
+	}
+
+	span {
+		font-weight: bold;
+		color: $primary-blue;
+	}
+
+	.form_wrapper {
+		margin-top: 25px;
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+
+	.form_box {
+		max-width: 460px;
+		width: 100%;
+
+		input,
+		textarea {
+			width: 100%;
+			background-color: transparent;
+			padding: 13px 5px;
+			border: none;
+			outline: none;
+			color: $primary-white;
+
+			&::placeholder {
+				font-size: 18px;
+				color: $primary-white;
+				line-height: 1;
+			}
+		}
+
+		input {
+			border-bottom: 1px solid $primary-grey;
+			margin-bottom: 35px;
+		}
+
+		textarea {
+			border: 1px dashed $primary-grey;
+		}
+
+		button {
+			padding: 20px 50px;
+			background-color: $primary-yellow;
+			color: $primary-black;
+			font-size: 18px;
+			font-weight: bold;
+			line-height: 1.88;
+			margin-top: 35px;
+			margin-bottom: 15px;
+		}
+
+		.form_checkbox {
+			display: block;
+			position: relative;
+			font-size: 12px;
+			font-weight: 300;
+			color: $primary-white;
+			padding-left: 35px;
+			margin: 0;
+			margin-top: 7px;
+			cursor: pointer;
+			user-select: none;
+		}
+
+		.form_checkbox input {
+			position: absolute;
+			opacity: 0;
+			cursor: pointer;
+			height: 0;
+			width: 0;
+		}
+
+		.form_checkmark {
+			position: absolute;
+			top: -7px;
+			left: 0;
+			height: 25px;
+			width: 25px;
+			background-color: transparent;
+			border: 1px solid $primary-grey;
+		}
+
+		.form_checkbox:hover input ~ .form_checkmark {
+			background-color: transparent;
+		}
+
+		.form_checkbox input:checked ~ .form_checkmark {
+			background-color: transparent;
+		}
+
+		.form_checkmark:after {
+			content: "";
+			position: absolute;
+			display: none;
+		}
+
+		.form_checkbox input:checked ~ .form_checkmark:after {
+			display: block;
+		}
+
+		.form_checkbox .form_checkmark:after {
+			left: 9px;
+			top: 5px;
+			width: 5px;
+			height: 10px;
+			border: solid white;
+			border-width: 0 3px 3px 0;
+			transform: rotate(45deg);
+		}
+	}
+}
+
+

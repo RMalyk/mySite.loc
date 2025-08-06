@@ -1,0 +1,71 @@
+# Root
+.htaccess
+/.htaccess
+wp-config.php
+robots.txt
+sitemap.xml
+sitemap.xml.gz
+
+# wp-content
+wp-content/*
+!wp-content/mu-plugins/
+!wp-content/plugins/
+!wp-content/themes/
+wp-content/themes/twenty*/
+
+# ignore all files starting with . or ~ (not .gitignore)
+.*
+~*
+!.gitignore
+
+# ignore node and composer dependency
+package-lock.json
+wp-content/themes/*/node_modules/
+composer.lock
+wp-content/themes/*/vendor/
+
+# ignore OS generated files
+ehthumbs.db
+Thumbs.db
+.DS_Store*
+._*
+
+# ignore Editor files
+*.sublime-project
+*.sublime-workspace
+*.komodoproject
+.idea/
+.idea/*
+
+# ignore log files and databases
+*.log
+*.sql
+*.sqlite
+
+# ignore compiled files
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# ignore packaged files
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+!wp-includes/**/*.gz
+
+# Vim generated files #
+*.un~
+
+# SASS #
+.sass-cache
+
+# Personal
+docs/*

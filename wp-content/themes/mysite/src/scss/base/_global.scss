@@ -1,0 +1,76 @@
+:root {
+	--custom-vh: calc(var(--vh, 1vh) * 100);
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: $roboto;
+	font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	font-weight: inherit;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	line-height: 1;
+}
+
+
+//h1,
+//h2,
+//h3,
+//h4,
+//h5,
+//h6 {
+//	letter-spacing: 0.5px;
+//}
+
+ol,
+ul,
+li {
+	padding: 0;
+	margin: 0;
+	list-style-position: inside;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+	font-size: inherit;
+}
+
+img {
+	width: 100%;
+	display: block;
+}
+
+button {
+	border: none;
+	background: transparent;
+	cursor: pointer;
+	outline: none;
+}
+
+.wrapper_global {
+	max-width: 1250px;
+	width: 100%;
+	padding: 0 15px;
+	margin: 0 auto;
+	//position: relative;
+	//z-index: 10;
+}
+
+//=======================================================
