@@ -80,7 +80,7 @@ class GutenbergBlocks {
 			[
 				'name'        => 'hero_slider',
 				'title'       => 'Hero Slider',
-				'category'    => 'hayes-blocks',
+				'category'    => 'mySite-blocks',
 				'description' => '',
 				'icon'        => [ 'background' => '#F8F200', 'src' => 'admin-home' ],
 				'keywords'    => [ 'hero', 'slider', 'top', 'block' ],
@@ -96,7 +96,7 @@ class GutenbergBlocks {
             [
 				'name'        => 'portfolio',
 				'title'       => 'Portfolio',
-				'category'    => 'hayes-blocks',
+				'category'    => 'mySite-blocks',
 				'description' => '',
 				'icon'        => [ 'background' => '#F8F200', 'src' => 'admin-home' ],
 				'keywords'    => [ 'portfolio', 'site', 'grid', 'block' ],
@@ -111,16 +111,16 @@ class GutenbergBlocks {
 			],
             [
 				'name'        => 'form_section',
-				'title'       => 'Hero Slider',
-				'category'    => 'hayes-blocks',
+				'title'       => 'Form section',
+				'category'    => 'mySite-blocks',
 				'description' => '',
 				'icon'        => [ 'background' => '#F8F200', 'src' => 'admin-home' ],
-				'keywords'    => [ 'hero', 'slider', 'top', 'block' ],
+				'keywords'    => [ 'hero', 'site', 'form', 'block' ],
 				'example'     => [
 					'attributes' => [
 						'mode' => 'preview',
 						'data' => [
-							'image' => 'hero_slider.png',
+							'image' => 'form_section.png',
 						]
 					]
 				]
