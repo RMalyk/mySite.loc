@@ -93,6 +93,22 @@ class GutenbergBlocks {
 					]
 				]
 			],
+            [
+				'name'        => 'form_section',
+				'title'       => 'Hero Slider',
+				'category'    => 'hayes-blocks',
+				'description' => '',
+				'icon'        => [ 'background' => '#F8F200', 'src' => 'admin-home' ],
+				'keywords'    => [ 'hero', 'slider', 'top', 'block' ],
+				'example'     => [
+					'attributes' => [
+						'mode' => 'preview',
+						'data' => [
+							'image' => 'hero_slider.png',
+						]
+					]
+				]
+			],
 		];
 	}
 
