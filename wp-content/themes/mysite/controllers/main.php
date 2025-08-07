@@ -17,6 +17,7 @@ $controllers = [
         'DisplayGlobal',
 //        'DisplayImages',
         'GutenbergBlocks',
+        'AcfBlockParsing',
 //        'DisplayBreadcrumbs',
 //        'DisplayResources',
     ],

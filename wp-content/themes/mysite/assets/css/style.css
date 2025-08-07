@@ -625,8 +625,8 @@ header {
   max-height: 30px;
   width: 100%;
   height: 100%;
-  -webkit-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
+  -webkit-transition: all 3ms ease-in;
+  transition: all 3ms ease-in;
 }
 
 .social a:last-of-type {
@@ -695,6 +695,12 @@ header {
   color: #F8F200;
   padding: 20px 50px;
   background-color: #000;
+  -webkit-transition: opacity 3ms ease-in;
+  transition: opacity 3ms ease-in;
+}
+
+.accent_block a:hover {
+  opacity: 0.7;
 }
 
 .portfolio_section {
@@ -918,6 +924,12 @@ header {
   margin-bottom: 15px;
   max-width: 192px;
   cursor: pointer;
+  -webkit-transition: opacity 3ms ease-in;
+  transition: opacity 3ms ease-in;
+}
+
+.form_section .form_box .btn_accent:hover {
+  opacity: 0.7;
 }
 
 .form_section .form_box .wpcf7-list-item.first.last {
@@ -931,6 +943,7 @@ header {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  margin-left: 10px;
 }
 
 .form_section .form_box .wpcf7-list-item.first.last label input[type=checkbox] {
@@ -947,8 +960,8 @@ header {
   border-radius: 0;
   height: 16px;
   width: 16px;
-  top: 3px;
-  left: 3px;
+  top: 1px;
+  left: 1px;
   border: 1px solid #777777;
 }
 
@@ -959,8 +972,8 @@ header {
   font-size: 18px;
   text-align: center;
   line-height: 30px;
-  left: 9px;
-  top: 5px;
+  left: 7px;
+  top: 3px;
   width: 5px;
   height: 10px;
   border: solid #F8F200;
@@ -976,6 +989,15 @@ header {
 
 .form_section .form_box .wpcf7-checkbox input[type=checkbox]:checked + span:after {
   visibility: visible;
+}
+
+.form_section .form_box .wpcf7-not-valid-tip,
+.form_section .form_box .wpcf7-spinner {
+  display: none;
+}
+
+.form_section .form_box .wpcf7-response-output {
+  color: #fff;
 }
 
 @media (max-width: 768px) {

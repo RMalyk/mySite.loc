@@ -26,6 +26,11 @@
 		color: $primary-yellow;
 		padding: 20px 50px;
 		background-color: $primary-black;
+		transition: opacity 3ms ease-in;
+
+		&:hover{
+			opacity: .7;
+		}
 	}
 }
 
