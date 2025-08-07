@@ -44,7 +44,7 @@ class DisplayGlobal
 	{
 		if (empty($image['url'])) return;
 
-		$alt     = !empty($link['alt']) ? $link['alt'] : '';
+		$alt     = !empty($image['alt']) ? $image['alt'] : '';
 		$classes = !empty($classes) ? " class='" . $classes . "' " : '';
 		$attrs   = '';
 		if (!empty($attrs_data)) {

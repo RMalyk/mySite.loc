@@ -1,13 +1,16 @@
 <?php
 $get_stylesheet_directory_uri = get_stylesheet_directory_uri() . '/';
+
+$logo = get_field( 'footer_logo', 'option' );
+
 ?>
 
 <footer>
 	<div class="logo_footer">
-		<img src="<?php echo $get_stylesheet_directory_uri ?>assets/images/icons/logo.svg" alt="logo">
+		<?php DisplayGlobal::renderAcfImage( $logo ) ?>
 	</div>
 	<div class="copyright">
-		<p>CD PROJEKT®, Cyberpunk®, Cyberpunk 2077®</p>
+		<p>&copy; 2025 Роман Малик. Усі права захищено.</p>
 	</div>
 </footer>
 

@@ -5,9 +5,9 @@ if( !defined( 'ABSPATH' ) ) exit;
 
 $controllers_path = get_stylesheet_directory().'/controllers/';
 $controllers = [
-//    'Admin'      => [
-//        'Settings'
-//    ],
+    'Admin'      => [
+        'Settings'
+    ],
 //    'Menu'       => [
 //        'MenuDisplay',
 //        'RegisterCustom'

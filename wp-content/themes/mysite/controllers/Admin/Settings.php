@@ -12,7 +12,7 @@ class Settings
 
 	public function initHooks()
 	{
-//		add_action('acf/init', [$this, 'addOptionsPages']);
+		add_action('acf/init', [$this, 'addOptionsPages']);
 		add_action('after_setup_theme', [$this, 'mySiteSetup']);
 	}
 
@@ -51,20 +51,20 @@ class Settings
 		);
 	}
 
-//	public function addOptionsPages()
-//	{
-//		if (!function_exists('acf_add_options_page')) return;
-//
-//		acf_add_options_page(
-//			[
-//				'page_title' => 'Shopingo theme settings',
-//				'menu_title' => 'Shopingo theme settings',
-//				'menu_slug'  => 'shopingo-theme-settings',
-//				'capability' => 'administrator',
-//				'redirect'   => false
-//			]
-//		);
-//
+	public function addOptionsPages()
+	{
+		if (!function_exists('acf_add_options_page')) return;
+
+		acf_add_options_page(
+			[
+				'page_title' => 'mySite settings',
+				'menu_title' => 'mySite settings',
+				'menu_slug'  => 'mySite-settings',
+				'capability' => 'administrator',
+				'redirect'   => false
+			]
+		);
+
 //		acf_add_options_page(
 //			[
 //				'page_title'  => 'Main slider',
@@ -75,7 +75,7 @@ class Settings
 //				'redirect'    => false
 //			]
 //		);
-//	}
+	}
 
 }
 

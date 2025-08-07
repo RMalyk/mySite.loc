@@ -1,5 +1,7 @@
 <?php
 $get_stylesheet_directory_uri = get_stylesheet_directory_uri() . '/';
+
+$logo = get_field( 'header_logo', 'option' );
 ?>
 
 <!doctype html>
@@ -18,15 +20,33 @@ $get_stylesheet_directory_uri = get_stylesheet_directory_uri() . '/';
 	<div class="wrapper_global">
 		<div class="header_wrapper">
 			<div class="logo">
-				<img src="<?php echo $get_stylesheet_directory_uri ?>assets/images/icons/logo.svg" alt="logo">
+				<?php DisplayGlobal::renderAcfImage( $logo ) ?>
 			</div>
 			<div class="social">
-				<a href="#"><img src="<?php echo $get_stylesheet_directory_uri ?>assets/images/icons/youtube.svg" alt="youtube"></a>
-				<a href="#"><img src="<?php echo $get_stylesheet_directory_uri ?>assets/images/icons/vk.svg" alt="vk"></a>
-				<a href="#"><img src="<?php echo $get_stylesheet_directory_uri ?>assets/images/icons/facebook.svg" alt="facebook"></a>
-				<a href="#"><img src="<?php echo $get_stylesheet_directory_uri ?>assets/images/icons/twitter.svg" alt="twitter"></a>
-				<a href="#"><img src="<?php echo $get_stylesheet_directory_uri ?>assets/images/icons/twitch.svg" alt="twitch"></a>
-				<a href="#"><img src="<?php echo $get_stylesheet_directory_uri ?>assets/images/icons/instagram.svg" alt="instagram"></a>
+				<a href="#">
+					<img src="<?php echo $get_stylesheet_directory_uri ?>assets/images/icons/youtube.svg"
+						 alt="youtube">
+				</a>
+				<a href="#">
+					<img src="<?php echo $get_stylesheet_directory_uri ?>assets/images/icons/vk.svg"
+						 alt="vk">
+				</a>
+				<a href="#">
+					<img src="<?php echo $get_stylesheet_directory_uri ?>assets/images/icons/facebook.svg"
+						 alt="facebook">
+				</a>
+				<a href="#">
+					<img src="<?php echo $get_stylesheet_directory_uri ?>assets/images/icons/twitter.svg"
+						 alt="twitter">
+				</a>
+				<a href="#">
+					<img src="<?php echo $get_stylesheet_directory_uri ?>assets/images/icons/twitch.svg"
+						 alt="twitch">
+				</a>
+				<a href="#">
+					<img src="<?php echo $get_stylesheet_directory_uri ?>assets/images/icons/instagram.svg"
+						 alt="instagram">
+				</a>
 			</div>
 		</div>
 	</div>
