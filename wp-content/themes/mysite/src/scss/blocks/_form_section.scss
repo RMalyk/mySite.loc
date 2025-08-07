@@ -64,6 +64,10 @@
 		max-width: 460px;
 		width: 100%;
 
+		p {
+			max-width: 100%;
+		}
+
 		input,
 		textarea {
 			width: 100%;
@@ -89,7 +93,7 @@
 			border: 1px dashed $primary-grey;
 		}
 
-		button {
+		.btn_accent {
 			padding: 20px 50px;
 			background-color: $primary-yellow;
 			color: $primary-black;
@@ -98,65 +102,60 @@
 			line-height: 1.88;
 			margin-top: 35px;
 			margin-bottom: 15px;
+			max-width: 192px;
+			cursor: pointer;
 		}
 
-		.form_checkbox {
-			display: block;
-			position: relative;
-			font-size: 12px;
-			font-weight: 300;
-			color: $primary-white;
-			padding-left: 35px;
+		.wpcf7-list-item.first.last {
 			margin: 0;
-			margin-top: 7px;
-			cursor: pointer;
-			user-select: none;
+
+			label {
+				display: flex;
+				align-items: center;
+
+				input[type="checkbox"] {
+					width: 14px;
+					height: 14px;
+					margin: 0 10px 0 0;
+					visibility: hidden;
+				}
+			}
 		}
 
-		.form_checkbox input {
+		.wpcf7-checkbox input[type=checkbox] + span:before {
+			display: block;
 			position: absolute;
-			opacity: 0;
-			cursor: pointer;
-			height: 0;
-			width: 0;
-		}
-
-		.form_checkmark {
-			position: absolute;
-			top: -7px;
-			left: 0;
-			height: 25px;
-			width: 25px;
-			background-color: transparent;
+			content: '';
+			border-radius: 0;
+			height: 16px;
+			width: 16px;
+			top: 3px;
+			left: 3px;
 			border: 1px solid $primary-grey;
 		}
 
-		.form_checkbox:hover input ~ .form_checkmark {
-			background-color: transparent;
-		}
-
-		.form_checkbox input:checked ~ .form_checkmark {
-			background-color: transparent;
-		}
-
-		.form_checkmark:after {
-			content: "";
-			position: absolute;
-			display: none;
-		}
-
-		.form_checkbox input:checked ~ .form_checkmark:after {
+		.wpcf7-checkbox input[type=checkbox] + span:after {
 			display: block;
-		}
-
-		.form_checkbox .form_checkmark:after {
+			position: absolute;
+			visibility: hidden;
+			font-size: 18px;
+			text-align: center;
+			line-height: 30px;
 			left: 9px;
 			top: 5px;
 			width: 5px;
 			height: 10px;
-			border: solid white;
-			border-width: 0 3px 3px 0;
+			border: solid $primary-yellow;
+			border-width: 0 1px 1px 0;
 			transform: rotate(45deg);
+		}
+
+		.wpcf7-checkbox input[type=checkbox]:checked + span:before {
+			background: transparent;
+		}
+
+		.wpcf7-checkbox input[type=checkbox]:checked + span:after {
+			visibility: visible;
 		}
 	}
 }

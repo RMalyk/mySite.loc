@@ -7,9 +7,10 @@ $title      = get_field('title');
 $text       = get_field('text');
 $image_mini = get_field('image_mini');
 $image_bg   = get_field('image_bg');
+$form_code   = get_field('form_code');
 //$image_preview = get_field('image_preview');
 
-
+//debug_data($form_code,true);
 ?>
 
 
@@ -35,18 +36,36 @@ $image_bg   = get_field('image_bg');
 <!--			<span>Sony PlayStation 5!</span>-->
 <!--			Заполни форму ниже и приложи скриншот о покупке игры. Итоги розыгрыша будут подведены 1 февраля. Удачи!-->
 <!--			;)</p>-->
+
+
+		<?php
+//		echo do_shortcode('[contact-form-7 id="27d0eb4" title="Feedback"]');
+		?>
+
+
+
 		<div class="form_wrapper">
 			<div class="form_box">
-				<form action="">
-					<input type="text" name="name" placeholder="Как тебя зовут?">
-					<input type="email" name="email" placeholder="Твой е-mail">
-					<textarea name="" placeholder="Напиши мне!"></textarea>
-					<button type="submit">Отправить</button>
-					<label class="form_checkbox">Согласен на обработку персональных данных
-						<input type="checkbox">
-						<span class="form_checkmark"></span>
-					</label>
-				</form>
+				<?php
+				if(!empty($form_code)){
+					echo do_shortcode($form_code);
+				}
+				?>
+
+
+
+
+
+<!--				<form action="">-->
+<!--					<input type="text" name="name" placeholder="Как тебя зовут?">-->
+<!--					<input type="email" name="email" placeholder="Твой е-mail">-->
+<!--					<textarea name="" placeholder="Напиши мне!"></textarea>-->
+<!--					<button type="submit">Отправить</button>-->
+<!--					<label class="form_checkbox">Согласен на обработку персональных данных-->
+<!--						<input type="checkbox">-->
+<!--						<span class="form_checkmark"></span>-->
+<!--					</label>-->
+<!--				</form>-->
 			</div>
             <?php
             if(!empty($image_bg)){ ?>

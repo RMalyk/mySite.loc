@@ -849,6 +849,10 @@ header {
   width: 100%;
 }
 
+.form_section .form_box p {
+  max-width: 100%;
+}
+
 .form_section .form_box input,
 .form_section .form_box textarea {
   width: 100%;
@@ -903,7 +907,7 @@ header {
   border: 1px dashed #777777;
 }
 
-.form_section .form_box button {
+.form_section .form_box .btn_accent {
   padding: 20px 50px;
   background-color: #F8F200;
   color: #000;
@@ -912,70 +916,66 @@ header {
   line-height: 1.88;
   margin-top: 35px;
   margin-bottom: 15px;
+  max-width: 192px;
+  cursor: pointer;
 }
 
-.form_section .form_box .form_checkbox {
-  display: block;
-  position: relative;
-  font-size: 12px;
-  font-weight: 300;
-  color: #fff;
-  padding-left: 35px;
+.form_section .form_box .wpcf7-list-item.first.last {
   margin: 0;
-  margin-top: 7px;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
 }
 
-.form_section .form_box .form_checkbox input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
+.form_section .form_box .wpcf7-list-item.first.last label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
-.form_section .form_box .form_checkmark {
+.form_section .form_box .wpcf7-list-item.first.last label input[type=checkbox] {
+  width: 14px;
+  height: 14px;
+  margin: 0 10px 0 0;
+  visibility: hidden;
+}
+
+.form_section .form_box .wpcf7-checkbox input[type=checkbox] + span:before {
+  display: block;
   position: absolute;
-  top: -7px;
-  left: 0;
-  height: 25px;
-  width: 25px;
-  background-color: transparent;
+  content: "";
+  border-radius: 0;
+  height: 16px;
+  width: 16px;
+  top: 3px;
+  left: 3px;
   border: 1px solid #777777;
 }
 
-.form_section .form_box .form_checkbox:hover input ~ .form_checkmark {
-  background-color: transparent;
-}
-
-.form_section .form_box .form_checkbox input:checked ~ .form_checkmark {
-  background-color: transparent;
-}
-
-.form_section .form_box .form_checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
-
-.form_section .form_box .form_checkbox input:checked ~ .form_checkmark:after {
+.form_section .form_box .wpcf7-checkbox input[type=checkbox] + span:after {
   display: block;
-}
-
-.form_section .form_box .form_checkbox .form_checkmark:after {
+  position: absolute;
+  visibility: hidden;
+  font-size: 18px;
+  text-align: center;
+  line-height: 30px;
   left: 9px;
   top: 5px;
   width: 5px;
   height: 10px;
-  border: solid white;
-  border-width: 0 3px 3px 0;
+  border: solid #F8F200;
+  border-width: 0 1px 1px 0;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
+}
+
+.form_section .form_box .wpcf7-checkbox input[type=checkbox]:checked + span:before {
+  background: transparent;
+}
+
+.form_section .form_box .wpcf7-checkbox input[type=checkbox]:checked + span:after {
+  visibility: visible;
 }
 
 @media (max-width: 768px) {
