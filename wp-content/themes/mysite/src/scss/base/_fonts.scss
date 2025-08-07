@@ -24,11 +24,11 @@
 
 @font-face {
 	font-family: 'Roboto';
-	src: url('../fonts/Roboto-Light.ttf.ttf');
-	src: local('Roboto-Light.ttf'), local('Roboto-Light.ttf'),
-	url('../fonts/Roboto-Light.ttf.woff2') format('woff2'),
-	url('../fonts/Roboto-Light.ttf.woff') format('woff'),
-	url('../fonts/Roboto-Light.ttf.ttf') format('truetype');
+	src: url('../fonts/Roboto-Light.ttf');
+	src: local('Roboto-Light'), local('Roboto-Light.ttf'),
+	url('../fonts/Roboto-Light.woff2') format('woff2'),
+	url('../fonts/Roboto-Light.woff') format('woff'),
+	url('../fonts/Roboto-Light.ttf') format('truetype');
 	font-weight: 300;
 	font-style: normal;
 	font-display: swap;

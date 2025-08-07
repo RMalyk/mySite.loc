@@ -508,8 +508,8 @@ template {
 
 @font-face {
   font-family: "Roboto";
-  src: url("../fonts/Roboto-Light.ttf.ttf");
-  src: local("Roboto-Light.ttf"), local("Roboto-Light.ttf"), url("../fonts/Roboto-Light.ttf.woff2") format("woff2"), url("../fonts/Roboto-Light.ttf.woff") format("woff"), url("../fonts/Roboto-Light.ttf.ttf") format("truetype");
+  src: url("../fonts/Roboto-Light.ttf");
+  src: local("Roboto-Light"), local("Roboto-Light.ttf"), url("../fonts/Roboto-Light.woff2") format("woff2"), url("../fonts/Roboto-Light.woff") format("woff"), url("../fonts/Roboto-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -781,8 +781,8 @@ header {
   position: absolute;
   -webkit-filter: contrast(1000%) brightness(1500%);
   filter: contrast(1000%) brightness(1500%);
-  background: -webkit-gradient(linear, left bottom, left top, from(rgb(0, 0, 0)), to(rgba(0, 0, 0, 0))), url(../../images/shum.svg);
-  background: linear-gradient(0deg, rgb(0, 0, 0), rgba(0, 0, 0, 0)), url(../../images/shum.svg);
+  background: -webkit-gradient(linear, left bottom, left top, from(rgb(0, 0, 0)), to(rgba(0, 0, 0, 0))), url(../images/shum.svg);
+  background: linear-gradient(0deg, rgb(0, 0, 0), rgba(0, 0, 0, 0)), url(../images/shum.svg);
   width: 100%;
   height: 70px;
 }
