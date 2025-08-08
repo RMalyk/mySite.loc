@@ -1,6 +1,6 @@
 <?php
 
-get_header();
+get_header('post');
 
 $demo_path = get_field('demo_link');
 $demo_url  = get_template_directory_uri() . $demo_path;

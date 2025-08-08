@@ -36,7 +36,6 @@
                     <li data-menuanchor="characteristics"><a href="#characteristics">ХАРАКТЕРИСТИКИ</a></li>
                     <li data-menuanchor="questions"><a href="#questions">ЗАПИТАННЯ</a></li>
                     <li data-menuanchor="contacts"><a href="#contacts">КОНТАКТИ</a></li>
-<!--                    <li class="menu__phone"><a class="header__phone" href="tel:+380505676767">8 (050) 567 67 67</a>-->
                     </li>
                 </ul>
 
@@ -49,9 +48,6 @@
                     <li class="menu__phone"><a class="header__phone" href="tel:+380505676767">8 (050) 567 67 67</a>
                     </li>
                 </ul>
-<!--                <div class="menu__phone">-->
-<!--                    <a class="header__phone" href="tel:+380505676767">8 (050) 567 67 67</a>-->
-<!--                </div>-->
             </nav>
             <div class="header__info">
                 <a class="mavic__btn" href="#">ПРИДБАТИ</a>
@@ -305,6 +301,17 @@
 
 
 <script src="js/script.js"></script>
+<script>
+	$('#fullpage').fullpage({
+		sectionSelector: '.page_section',
+		licenseKey: 'gplv3-license',
+		anchors: ['main_section', 'product', 'benefits', 'characteristics', 'questions', 'contacts'],
+		menu: '#mavic-menu',
+		afterRender: function() {
+			$('.fp-overflow').removeClass('fp-overflow');
+		}
+	});
+</script>
 </body>
 
 </html>

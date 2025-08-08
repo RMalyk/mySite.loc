@@ -29,16 +29,15 @@ jQuery(function( $ ) {
     });
 
     // $('#fullpage').fullpage({
-    //     // scrollHorizontally: false,
     //     sectionSelector: '.page_section',
     //     licenseKey: 'gplv3-license',
-    //     // scrollOverflow: true,
-    //     // bigSectionsDestination: 'top',
     //     anchors: ['main_section', 'product', 'benefits', 'characteristics', 'questions', 'contacts'],
     //     menu: '#mavic-menu',
-    //     scrollBar: false,
-    //     // scrollOverflowMacStyle: true,
+    //     afterRender: function() {
+    //         $('.fp-overflow').removeClass('fp-overflow');
+    //     }
     // });
+
 
     const mobileMenu = $('.mobile_menu');
     $('#btn__menu-responsive').click(function() {
@@ -48,6 +47,14 @@ jQuery(function( $ ) {
     });
 
 
+    mobileMenu.find('a[href^="#"]').on('click',function(  ){
+        if(mobileMenu.hasClass('menu_open')){
+            mobileMenu.toggleClass('menu_open');
+            $('body').toggleClass('body-wrapper');
+            $('#btn__menu-responsive').toggleClass('mav_open');
+        }
+
+    });
 });
 
 
