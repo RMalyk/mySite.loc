@@ -14,9 +14,22 @@
 	clip-path: polygon(calc(100% - 92%) 0, 100% 0, 100% calc(100% - 14%), calc(100% - 8%) 100%, 0 100%, 0 calc(100% - 85%));
 	padding: 70px;
 
+	@media (max-width: 890px) {
+		padding: 40px;
+		max-width: 70%;
+	}
+
+	@media (max-width: 767px) {
+		position: relative;
+		max-width: 100%;
+	}
+
+	@media (max-width: 575px) {
+		padding: 25px;
+	}
+
 	h1 {
 		font-family: $archangelsk;
-		font-size: 62px;
 		margin-bottom: 25px;
 	}
 
@@ -27,6 +40,10 @@
 		padding: 20px 50px;
 		background-color: $primary-black;
 		transition: opacity 3ms ease-in;
+
+		@media (max-width: 890px) {
+			font-size: 20px;
+		}
 
 		&:hover{
 			opacity: .7;

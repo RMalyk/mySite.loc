@@ -32,11 +32,15 @@
 			max-width: 132px;
 			margin-right: 32px;
 			margin-bottom: 25px;
+
+			@media (max-width: 425px) {
+				max-width: 70px;
+				margin-right: 20px;
+				margin-bottom: 20px;
+			}
 		}
 
 		h2 {
-			font-size: 62px;
-			line-height: 1;
 			color: $primary-white;
 		}
 	}
@@ -46,6 +50,14 @@
 		color: $primary-white;
 		max-width: 80%;
 		line-height: 1.88;
+
+		@media (max-width: 767px) {
+			max-width: 100%;
+		}
+
+		@media (max-width: 575px) {
+			line-height: 1.5;
+		}
 	}
 
 	span {
@@ -58,11 +70,19 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: flex-start;
+
+		@media (max-width: 767px) {
+			flex-direction: column;
+		}
 	}
 
 	.form_box {
 		max-width: 460px;
 		width: 100%;
+
+		@media (max-width: 767px) {
+			max-width: 100%;
+		}
 
 		p {
 			max-width: 100%;

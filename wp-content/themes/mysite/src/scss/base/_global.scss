@@ -28,6 +28,20 @@ p {
 	line-height: 1;
 }
 
+h1,
+h2 {
+	font-size: 62px;
+	line-height: 1;
+
+	@media (max-width: 890px) {
+		font-size: 48px;
+	}
+
+	@media (max-width: 575px) {
+		font-size: 36px;
+	}
+}
+
 
 //h1,
 //h2,
