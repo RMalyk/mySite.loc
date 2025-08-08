@@ -32,12 +32,11 @@ jQuery(function( $ ) {
     //     // scrollHorizontally: false,
     //     sectionSelector: '.page_section',
     //     licenseKey: 'gplv3-license',
-    //     scrollOverflow: true,
+    //     // scrollOverflow: true,
     //     // bigSectionsDestination: 'top',
     //     anchors: ['main_section', 'product', 'benefits', 'characteristics', 'questions', 'contacts'],
     //     menu: '#mavic-menu',
-    //     // scrollBar: true,
-    //     scrollHorizontally: true,
+    //     scrollBar: false,
     //     // scrollOverflowMacStyle: true,
     // });
 
