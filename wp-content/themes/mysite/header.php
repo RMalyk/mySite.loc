@@ -1,7 +1,10 @@
 <?php
 $get_stylesheet_directory_uri = get_stylesheet_directory_uri() . '/';
 
-$logo = get_field( 'header_logo', 'option' );
+$logo     = get_field( 'header_logo', 'option' );
+$telegram = get_field( 'telegram', 'option' );
+$whatsapp = get_field( 'whatsapp', 'option' );
+$viber    = get_field( 'viber', 'option' );
 ?>
 
 <!doctype html>
@@ -22,32 +25,28 @@ $logo = get_field( 'header_logo', 'option' );
 			<div class="logo">
 				<?php DisplayGlobal::renderAcfImage( $logo ) ?>
 			</div>
-			<div class="social">
-				<a href="#">
-					<img src="<?php echo $get_stylesheet_directory_uri ?>assets/images/icons/youtube.svg"
-						 alt="youtube">
-				</a>
-				<a href="#">
-					<img src="<?php echo $get_stylesheet_directory_uri ?>assets/images/icons/vk.svg"
-						 alt="vk">
-				</a>
-				<a href="#">
-					<img src="<?php echo $get_stylesheet_directory_uri ?>assets/images/icons/facebook.svg"
-						 alt="facebook">
-				</a>
-				<a href="#">
-					<img src="<?php echo $get_stylesheet_directory_uri ?>assets/images/icons/twitter.svg"
-						 alt="twitter">
-				</a>
-				<a href="#">
-					<img src="<?php echo $get_stylesheet_directory_uri ?>assets/images/icons/twitch.svg"
-						 alt="twitch">
-				</a>
-				<a href="#">
-					<img src="<?php echo $get_stylesheet_directory_uri ?>assets/images/icons/instagram.svg"
-						 alt="instagram">
-				</a>
-			</div>
+			<?php
+			if(!empty($telegram) || !empty($whatsapp) || !empty($viber)){ ?>
+				<div class="social">
+					<a href="<?php echo 'https://t.me/'.$telegram['number']?>">
+						<?php DisplayGlobal::renderAcfImage( $telegram['image'] ) ?>
+					</a>
+
+					<a href="<?php echo 'https://wa.me/'.$whatsapp['number']?>">
+						<?php DisplayGlobal::renderAcfImage( $whatsapp['image'] ) ?>
+					</a>
+
+					<a href="<?php echo 'viber://chat?number='.$viber['number']?>">
+						<?php DisplayGlobal::renderAcfImage( $viber['image'] ) ?>
+					</a>
+
+
+				</div>
+			<?php }
+
+
+			?>
+
 		</div>
 	</div>
 </header>
